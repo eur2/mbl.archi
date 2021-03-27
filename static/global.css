@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "aeb";
+  src: url("a.woff") format("woff");
+  src: url("a.woff2") format("woff2");
+  font-weight: bold;
+  font-style: bold;
+  font-display: fallback;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+}
+
+body {
+  font-family: "aeb", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  word-spacing: -0.03em;
+  color: black;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* color: blue; */
+}
+
+button:hover,
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+p {
+  /* margin-block-start: 1em; */
+  margin-block-end: 1em;
+}
+
+p,
+h1,
+h2,
+h4 {
+  font-size: 1em;
+}
+h3 {
+  font-size: 2em;
+  letter-spacing: -0.02em;
+}
+sup {
+  font-size: 50%;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  transition: opacity 0.2s;
+}
+
+.lazy {
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+}
+
+.mixblend {
+  mix-blend-mode: difference;
+  color: white;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+.t0 {
+  top: 0;
+}
+
+.b0 {
+  bottom: 0;
+}
+
+.l0 {
+  left: 0;
+}
+
+.r0 {
+  right: 0;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+.o-y-auto {
+  overflow-y: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+.p,
+.content {
+  padding: 0.25em;
+}
+.pt {
+  padding-top: 2em;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+article {
+  padding: 0.5em;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+  background-color: white;
+}
+.trim {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.close {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  padding: 0.5rem 0.5rem 0 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.left,
+.right {
+  display: none;
+}
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+/* .pointer{
+  cursor: pointer;
+} */
+.slide {
+  width: 75%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+}
+.slide figure {
+  height: 75vh;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.label {
+  width: 100px;
+}
+.data {
+  width: 100%;
+}
+
+.facts {
+  padding-bottom: 1em;
+  font-size: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.2em;
+  /* grid-auto-rows: minmax(100px, auto); */
+}
+.grid img {
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  main {
+    padding: 0.25em;
+  }
+  article {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .content {
+    padding: 1em;
+  }
+  .content p {
+    font-size: 2em;
+    letter-spacing: -0.02em;
+  }
+  .left,
+  .right {
+    display: block;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    width: 50% !important;
+    margin: 0 !important;
+  }
+  .left {
+    cursor: w-resize;
+    left: 0 !important;
+  }
+  .right {
+    cursor: e-resize;
+    right: 0 !important;
+  }
+}
+@media (min-width: 960px) {
+  article {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media (min-width: 1280px) {
+  article {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
