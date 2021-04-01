@@ -11,7 +11,7 @@ async function frPdf(pathh) {
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.goto(`https://api.martinezbaratlafore.com/${pathh}/#fr`, {
+  await page.goto(`https://api.mbl.archi/${pathh}/#fr`, {
     waitUntil: "networkidle2",
   });
   await page.evaluate(() => {

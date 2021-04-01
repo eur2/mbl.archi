@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-  <title>MBL</title>
+  <title>MBL architectes</title>
 </svelte:head>
 {#each posts as post}
   <Post
