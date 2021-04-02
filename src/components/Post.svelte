@@ -86,12 +86,11 @@
 <article>
   <header>
     <h2>
-      <a
+      <!-- <a
         target="_blank"
         href={`https://cyberfem-pdf-renderer.herokuapp.com/api/render?emulateScreenMedia=false&url=https://api.mbl.archi/${slug}/#en`}
-        >{title}</a
-      >
-      <!-- <a href={`/docs/en_${slug}.pdf`}>{title}</a> -->
+        >{title}</a> -->
+      <a target="_blank" href={`/docs/en_${slug}.pdf`}>{title}</a>
     </h2>
     {#if phrase}
       <h3><button on:click={handleToggle}>{phrase}</button></h3>
