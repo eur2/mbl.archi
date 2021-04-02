@@ -87,7 +87,7 @@
   <header>
     <h2>
       <a
-        download={`${slug}.pdf`}
+        target="_blank"
         href={`https://cyberfem-pdf-renderer.herokuapp.com/api/render?emulateScreenMedia=false&url=https://api.mbl.archi/${slug}/#en`}
         >{title}</a
       >
