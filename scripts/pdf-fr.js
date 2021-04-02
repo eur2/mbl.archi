@@ -20,7 +20,7 @@ async function frPdf(pathh) {
   await timeout(9000);
 
   await page.pdf({
-    path: `static/docs/fr_${pathh}.pdf`,
+    path: `static/fr/${pathh}.pdf`,
     format: "A4",
   });
 

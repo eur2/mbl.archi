@@ -40,15 +40,16 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+  /* color: blue; */
 }
 
 button:hover,
-a:hover,
-p a {
+a:hover {
   text-decoration: underline;
 }
 
 p {
+  /* margin-block-start: 1em; */
   margin-block-end: 1em;
 }
 
@@ -190,12 +191,16 @@ article {
   bottom: 0;
   cursor: pointer;
 }
+/* .pointer{
+  cursor: pointer;
+} */
 .slide {
-  width: 100%;
-  height: 100vh;
+  width: 75%;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: white; */
 }
 .slide figure {
   height: 75vh;
@@ -218,16 +223,19 @@ article {
   font-size: 12px;
 }
 .grid {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.2em; */
+  /* grid-auto-rows: minmax(100px, auto); */
   display: flex;
   flex-wrap: wrap;
 }
-.grid img,
-.grid video {
+.grid img {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   cursor: pointer;
-  padding-right: 0.2em;
-  padding-bottom: 0.2em;
+  padding-right: 0.1em;
+  padding-bottom: 0.1em;
 }
 
 @media (min-width: 500px) {
@@ -262,10 +270,6 @@ article {
   .right {
     cursor: e-resize;
     right: 0 !important;
-  }
-  .slide {
-    width: 75%;
-    height: 75vh;
   }
 }
 @media (min-width: 960px) {

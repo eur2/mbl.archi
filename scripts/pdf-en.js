@@ -20,7 +20,7 @@ async function enPdf(pathh) {
   await timeout(9000);
 
   await page.pdf({
-    path: `static/docs/en_${pathh}.pdf`,
+    path: `static/en/${pathh}.pdf`,
     format: "A4",
   });
 

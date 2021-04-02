@@ -24,7 +24,7 @@
       <div class="fixed t0 w100 z2 mixblend text-center p">
         <button on:click={handleToggle}>× MBL architectes</button>
       </div>
-      <div class="content">
+      <div class="content pt">
         <slot />
       </div>
     </div>
