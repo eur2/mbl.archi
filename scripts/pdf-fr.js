@@ -27,8 +27,7 @@ async function frPdf(pathh) {
   await browser.close();
 }
 
-let url =
-  "https://api.martinezbaratlafore.com/wp-json/wp/v2/posts?_embed&per_page=100";
+let url = "https://api.mbl.archi/wp-json/wp/v2/posts?_embed&per_page=100";
 
 https
   .get(url, (res) => {
