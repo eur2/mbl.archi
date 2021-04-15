@@ -372,6 +372,72 @@
               />
             </figure>
           {/if}
+          {#if images.img_10}
+            <figure>
+              <img
+                loading="lazy"
+                src={images.img_10.sizes["1536x1536"]}
+                alt="MBL"
+                width={images.img_10.sizes["1536x1536-width"]}
+                height={images.img_10.sizes["1536x1536-height"]}
+              />
+            </figure>
+          {/if}
+          {#if images.img_11}
+            <figure>
+              <img
+                loading="lazy"
+                src={images.img_11.sizes["1536x1536"]}
+                alt="MBL"
+                width={images.img_11.sizes["1536x1536-width"]}
+                height={images.img_11.sizes["1536x1536-height"]}
+              />
+            </figure>
+          {/if}
+          {#if images.img_12}
+            <figure>
+              <img
+                loading="lazy"
+                src={images.img_12.sizes["1536x1536"]}
+                alt="MBL"
+                width={images.img_12.sizes["1536x1536-width"]}
+                height={images.img_12.sizes["1536x1536-height"]}
+              />
+            </figure>
+          {/if}
+          {#if images.img_13}
+            <figure>
+              <img
+                loading="lazy"
+                src={images.img_13.sizes["1536x1536"]}
+                alt="MBL"
+                width={images.img_13.sizes["1536x1536-width"]}
+                height={images.img_13.sizes["1536x1536-height"]}
+              />
+            </figure>
+          {/if}
+          {#if images.img_14}
+            <figure>
+              <img
+                loading="lazy"
+                src={images.img_14.sizes["1536x1536"]}
+                alt="MBL"
+                width={images.img_14.sizes["1536x1536-width"]}
+                height={images.img_14.sizes["1536x1536-height"]}
+              />
+            </figure>
+          {/if}
+          {#if images.img_15}
+            <figure>
+              <img
+                loading="lazy"
+                src={images.img_15.sizes["1536x1536"]}
+                alt="MBL"
+                width={images.img_15.sizes["1536x1536-width"]}
+                height={images.img_15.sizes["1536x1536-height"]}
+              />
+            </figure>
+          {/if}
           <!-- <span class="control right" slot="right-control">{">"}</span> -->
         </Carousel>
       </div>
