@@ -90,7 +90,11 @@
         target="_blank"
         href={`https://cyberfem-pdf-renderer.herokuapp.com/api/render?emulateScreenMedia=false&url=https://api.mbl.archi/${slug}/#en`}
         >{title}</a> -->
-      <a href={`/en/${slug}.pdf`} rel="noopener" target="_blank">{title}</a>
+      <a
+        href={`https://api.mbl.archi/en/${slug}.pdf`}
+        rel="noopener"
+        target="_blank">{title}</a
+      >
     </h2>
     {#if phrase}
       <h3><button on:click={handleToggle}>{phrase}</button></h3>
