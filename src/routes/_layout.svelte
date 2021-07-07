@@ -9,7 +9,7 @@
 
 <script>
   export let page;
-  export let segment;
+  // export let segment;
   import Header from "../components/Header.svelte";
   import { onMount } from "svelte";
 
@@ -23,11 +23,11 @@
   });
 </script>
 
-{#if segment === undefined}
-  <Header {x} {y} {z}>
-    {@html page.content.rendered}
-  </Header>
-{/if}
+<!-- {#if segment === undefined} -->
+<Header {x} {y} {z}>
+  {@html page.content.rendered}
+</Header>
+<!-- {/if} -->
 
 <main class="pt">
   <slot />

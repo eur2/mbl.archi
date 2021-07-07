@@ -12,6 +12,9 @@
     style="background-color:rgb({x},{y},{z});"
   >
     <h1><button on:click={handleToggle}>MBL architectes</button></h1>
+    <div class="absolute t0 r0 p z3">
+      <a href=".">en</a>/<a href="fr">fr</a>
+    </div>
   </div>
   <div class="fixed t0 w100 z2 mixblend text-center p">
     <button on:click={handleToggle}>MBL architectes</button>
