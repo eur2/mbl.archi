@@ -1,15 +1,16 @@
 <script context="module">
-  export async function preload() {
-    const req = await this.fetch(
-      "https://api.mbl.archi/wp-json/wp/v2/pages?slug=info"
-    ).then((r) => r.json());
-    return { page: req[0] };
+  export function preload() {
+    return this.fetch(`https://api.mbl.archi/wp-json/wp/v2/pages`)
+      .then((r) => r.json())
+      .then((pages) => {
+        return { pages };
+      });
   }
 </script>
 
 <script>
-  export let page;
-  // export let segment;
+  export let pages;
+  export let segment;
   import Header from "../components/Header.svelte";
   import { onMount } from "svelte";
 
@@ -23,11 +24,19 @@
   });
 </script>
 
-<!-- {#if segment === undefined} -->
-<Header {x} {y} {z}>
-  {@html page.content.rendered}
-</Header>
-<!-- {/if} -->
+{#if segment === "fr"}
+  <Header {x} {y} {z}>
+    {#each pages as page}
+      {#if page.slug === "info-fr"} {@html page.content.rendered} {/if}
+    {/each}
+  </Header>
+{:else}
+  <Header {x} {y} {z}>
+    {#each pages as page}
+      {#if page.slug === "info"} {@html page.content.rendered} {/if}
+    {/each}
+  </Header>
+{/if}
 
 <main class="pt">
   <slot />
